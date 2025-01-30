@@ -1,0 +1,55 @@
+<form [formGroup]="order" (ngSubmit)="onSubmit()">
+  <mat-card>
+    <h1 class="title">Add Order</h1>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input
+              type="text"
+              matInput
+              placeholder="Name"
+              formControlName="name"
+            />
+            @if (order.controls['name'].hasError('required')) {
+            <mat-error>Name is <strong>required</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input
+              type="number"
+              matInput
+              placeholder="Amount"
+              formControlName="amount"
+            />
+            @if (order.controls['amount'].hasError('required')) {
+            <mat-error>Amount name is <strong>required</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input
+              type="number"
+              matInput
+              placeholder="Price"
+              formControlName="price"
+            />
+            @if (order.controls['price'].hasError('required')) {
+            <mat-error>Price is <strong>required</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button type="submit">Add order</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

@@ -1,0 +1,22 @@
+:host {
+  position: relative;
+}
+
+.add-button {
+  position: absolute;
+  top: 14%;
+  right: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.full-width-table {
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}

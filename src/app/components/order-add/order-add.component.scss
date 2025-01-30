@@ -1,0 +1,24 @@
+.full-width {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+}
+
+.mat-mdc-card-actions {
+  padding: 16px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
